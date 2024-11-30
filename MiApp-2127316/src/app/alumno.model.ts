@@ -2,6 +2,6 @@
 
 
 export interface alumno {
-    nombre: string;
+   nombre: string;
     presente: boolean;
 }

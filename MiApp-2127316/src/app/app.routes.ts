@@ -2,9 +2,14 @@ import { Routes } from '@angular/router';
 
 export const routes: Routes = [
   {
-    path: 'listaAlumnos',
-    loadComponent: () => import('./lista-alumnos/lista-alumnos.component').then((m) => m.ListaAlumnosComponent),
+    path: 'camara',
+    loadComponent: () => import('./camara/camara.component').then((m) => m.CamaraComponent),
   },
+  
+  // {
+  //   path: 'listaAlumnos',
+  //   loadComponent: () => import('./lista-alumnos/lista-alumnos.component').then((m) => m.ListaAlumnosComponent),
+  // },
   // {
   //   path: 'home',
   //   loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
@@ -20,7 +25,7 @@ export const routes: Routes = [
 
   {
     path: '',
-    redirectTo: '/home',
+    redirectTo: '/camara',
     pathMatch: 'full', 
   }
 ];
